@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=d50ce-width, 550al-scale=50">
+    <title>Portfolio</title>
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="shell__header">
+                <div class="header__inner">
+                    <a href="#" class="logo">
+                        <img src="html5.png" class="logo"/>
+                    </a>
+
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <a class="links" href="#">Home</a>
+                            </li>
+
+                            <li>
+                                <a class="links" href="#">About</a>
+                            </li>
+
+                            <li>
+                                <a class="links" href="#">Projects</a>
+                            </li>
+
+                            <li>
+                                <a class="links" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+               </div>
+            </div>
+        </header>
+
+        <div class="hero">
+            <div class="hero__image" style="background-image: url(background.jpg);"></div>
+
+            <div class="hero__inner">
+                <div class="shell">
+                    <h1>Hey, I'm Ilker Ishanov</h1>
+                
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <a href="#" class="btn">Projects</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <ul class="socials">
+                <li>
+                    <a class="social" href="#">
+                        <img class="socials" src="facebook.png" style="width: 50px; height:50px;">
+                    </a>
+                </li>
+
+                <li>
+                    <a class="social" href="#">
+                        <img class="socials" src="twitter.png" style="width: 50px; height:50px;">
+                    </a>
+                </li>
+
+                <li>
+                    <a class="social" href="#">
+                        <img class="socials" src="github.png" style="width: 50x; height: 50px;">
+                    </a>
+                </li>
+
+                <li>
+                    <a class="social" href="#">
+                        <img class="socials" src="linkedin.png" style="width: 50px; height:50px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="article">
+            <div class="shell">
+                <div class="article__inner">
+                    <div class="article__image" style="background-image: url(article.jpg); overflow: hidden; background-size: cover; "></div>
+
+                    <div class="article__body">
+                        <h2>Title</h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor deleniti eligendi ullam repellat, laboriosam perspiciatis eveniet asperiores facilis quas adipisci rerum cum! Ea nesciunt cum nam atque aut autem. Modi.</p>
+
+                        <a href="#" class="btn btn--medium btn--blue">Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article article--reversed">
+            <div class="shell">
+                <div class="article__inner">
+                    <div class="article__image" style="background-image: url(article.jpg); overflow: hidden; background-size: cover; "></div>
+
+                    <div class="article__body">
+                        <h2>Title</h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor deleniti eligendi ullam repellat, laboriosam perspiciatis eveniet asperiores facilis quas adipisci rerum cum! Ea nesciunt cum nam atque aut autem. Modi.</p>
+
+                        <a href="#" class="btn btn--medium btn--blue">Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="slide1.jpg" style="height: 700px; width: 900px;"/>
+                </div>
+                
+                <div class="swiper-slide">
+                    <img src="slide2.jpg" style="height: 700px; width: 900px;"/>
+                </div>
+                
+                <div class="swiper-slide">
+                    <img src="slide3.jpg" style="height: 700px; width: 900px;"/>
+                </div>
+                
+            </div>
+
+            <div class="swiper-button-next"></div>
+            
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+    </div>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    });
+  </script>
+</body>
+</html>

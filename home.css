@@ -1,0 +1,271 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+}
+
+
+body {
+    background-color: grey;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ------------------------------------------------------------ *\
+    Button
+\* ------------------------------------------------------------ */
+
+.btn {
+    display: inline-block; 
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: orange;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #3498db;
+}
+
+/* ------------------------------------------------------------ *\
+    Button Medium
+\* ------------------------------------------------------------ */
+
+.btn--medium {
+    padding: 20px 40px; 
+}
+
+/* ------------------------------------------------------------ *\
+    Button Blue
+\* ------------------------------------------------------------ */
+
+.btn--blue {
+    background: blue;
+    color: #fff;
+}
+
+.btn--blue:hover {
+    background: aqua;
+}
+
+/* ------------------------------------------------------------ *\
+    Shell
+\* ------------------------------------------------------------ */
+
+.shell {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;   
+}
+
+.shell__header {
+    max-width: 1800px;
+    margin: 0 0 0 70px;
+    padding: 0 20px;
+}
+
+/* ------------------------------------------------------------ *\
+    Wrapper
+\* ------------------------------------------------------------ */
+
+.wrapper {
+    position: relative; 
+    min-height: 100vh; 
+    overflow: hidden; 
+}
+
+/* ------------------------------------------------------------ *\
+    Logo
+\* ------------------------------------------------------------ */
+
+.logo {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+/* ------------------------------------------------------------ *\
+    Header
+\* ------------------------------------------------------------ */
+
+.header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 100;  
+    background: #fff;
+    box-shadow: 0 0 15px 0 black;
+}
+
+.header .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/* ------------------------------------------------------------ *\
+    Hero
+\* ------------------------------------------------------------ */
+
+.hero {
+    position: relative; 
+}
+
+.hero .hero__image {
+    min-height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.hero .hero__inner {
+    position: absolute; 
+    top: 50%; 
+    left: 0; 
+    width: 100%; 
+    z-index: 10; 
+    transform: translate(0, -50%); 
+}
+
+/* ------------------------------------------------------------ *\
+    Nav
+\* ------------------------------------------------------------ */
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav li + li {
+    margin-left: 80px; 
+}
+
+.nav .links {
+    text-decoration: none;
+    color: rgb(99, 14, 209);
+    border: 2px solid grey;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.nav .links:hover {
+    color: white;
+    background-color: black;
+    
+    
+}
+
+/* ------------------------------------------------------------ *\
+    Sidebar
+\* ------------------------------------------------------------ */
+
+.sidebar {
+    position: fixed; 
+    top: 50%;
+    left: 15px;  
+    transform: translate(0, -50%); 
+}
+
+/* ------------------------------------------------------------ *\
+    Socials
+\* ------------------------------------------------------------ */
+
+.socials {
+    list-style: none; 
+}
+
+.socials li + li {
+    margin-top: 20px; 
+}
+
+/* ------------------------------------------------------------ *\
+    Article
+\* ------------------------------------------------------------ */
+
+.article {
+    padding: 100px 0;
+}
+
+.article h2 {
+    margin-bottom: 20px; 
+}
+
+.article p {
+    margin-bottom: 20px; 
+}
+
+.article .article__inner {
+    display: flex;
+    align-items: center;
+}
+
+.article .article__image {
+    padding-top: 56%; 
+    flex: 0 0 50%; 
+}
+
+.article .article__body {
+    flex: 0 0 50%;
+    padding-left: 50px;   
+}
+
+/* ------------------------------------------------------------ *\
+    Article Reversed
+\* ------------------------------------------------------------ */
+
+.article--reversed .article__inner {
+    flex-direction: row-reverse;
+}
+
+.article--reversed .article__body {
+    padding-left: 0; 
+    padding-right: 50px; 
+}
+
+/* ------------------------------------------------------------ *\
+    Swiper
+\* ------------------------------------------------------------ */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+  background: #ccc; 
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
